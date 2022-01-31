@@ -40,7 +40,6 @@ public class PostCommentTest {
         blogPage.addMail("nekojaadresa@primer.com");
     }
 
-    /** ovoj test treba da padne bidejkji ne raboti funkcionalnosta za postiranje komentari */
 
     @Then("^comment posted successfully$")
     public void leftComment() {

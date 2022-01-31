@@ -24,6 +24,13 @@ public class HomePage extends BasePage {
         wd.findElement(By.id("comments"));
         return true;
     }
+    public void clickOlder() {
+        wd.findElement(By.xpath("/html/body/main/nav/a[1]")).click();
+    }
+    public boolean isNavigatedToOlder() {
+        wd.findElement(By.xpath("/html/body/main/nav/a[2]"));
+        return true;
+    }
     public void teardown() {
         wd.quit();
     }
